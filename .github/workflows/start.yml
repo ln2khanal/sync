@@ -1,18 +1,9 @@
-name: Pre-commit
-
-on:
-  push:
-    branches:
-      - 'main'
-  pull_request:
-    branches:
-      - 'main'
-
 jobs:
   startcheck:
     name: Basic Checks
     runs-on: ubuntu-latest
     if: ${{ github.event.pull_request.draft == false }}
     steps:
-        - name: Some Basic Check
-	- uses: echo "Non-draft PR is created.. check is complete"
+      - name: Some Basic Check
+        run: echo "Non-draft PR is created.. check is complete"
+      
