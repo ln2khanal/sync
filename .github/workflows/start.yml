@@ -8,9 +8,8 @@ jobs:
   startcheck:
     name: Basic Checks
     runs-on: ubuntu-latest
-    if: ${{ github.event.pull_request.draft == false }}
     steps:
-      - name: Some Basic Check
+      - name: Some Basic Check ${{ github.event.pull_request.draft }}
         run: echo "Non-draft PR is created.. check is complete"
   something_else:
     name: Basic Checks - 2
