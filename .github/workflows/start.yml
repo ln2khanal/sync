@@ -1,3 +1,9 @@
+name: My Workflow
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
   startcheck:
     name: Basic Checks
@@ -6,4 +12,10 @@ jobs:
     steps:
       - name: Some Basic Check
         run: echo "Non-draft PR is created.. check is complete"
+  something_else:
+    name: Basic Checks - 2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Regular Checks
+        run: echo "Regular checks need to be done"
       
