@@ -37,7 +37,7 @@ sync
 - The `auth.py` file provides necessary functions for authentication and database interactions.
 
 ## Dependencies
-- Python 3.x
+- Python 3
 - Docker
 - Docker Compose
 
